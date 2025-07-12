@@ -492,8 +492,8 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
             barmode='group', # el modo de visualización: barras agrupadas
             xaxis_tickangle=-45, # la inclinación de las etiquetas del eje X
             template='plotly_white', # un fondo blanco
-            legend_title_text='Versión'  # y el título de la leyenda
-            height=600
+            legend_title_text='Versión',  # el título de la leyenda
+            height=600 # y por último le damos un tamaño de 600 pixeles
         )
 
         # Mostrar el gráfico
