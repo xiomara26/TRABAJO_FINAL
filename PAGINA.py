@@ -108,7 +108,7 @@ elif  pagina_seleccionada == "♡ Canciones":  # Si en el desplegable la página
     # Agregamos un título a la página que irá en el centro (<h1 style='text-align: center;'>) : <em> le da cursiva y con  <span style='color: #d8a7b1;'> le damos color a la palabra CANCIONES.
     st.markdown("<h1 style='text-align: center;'><em>DESCUBRE</em> <span style='color: #d8a7b1;'>CANCIONES</span></h1>",  unsafe_allow_html=True)
 
-    # BUSCADOR DE CANCIONES SEGUN EL GENERO Y DURACION
+    # BUSCADOR DE CANCIONES SEGUN EL GENERO Y DURACIÓN
 
     # Primero, para el filtro de género, necesitamos obtener los generos disponibles en las canciones. 
     generos_encontrados= [] # Creamos una lista vacia que almacenará los generos que encontremos
@@ -253,7 +253,7 @@ elif pagina_seleccionada=="♡ Videoclips": # Si en el desplegable la página el
                     f"<b>{nombre}</b> ({año})<br><i>{lugar}</i><br><span style='color:#d8a7b1'>{dato}</span>", # Título en negrita y año entre paréntesis, lugar de grabación en cursiva, información adicional en color rosa claro (#d8a7b1)
                     max_width=300
                 ),
-                icon=folium.Icon(color='pink', icon="info-sign") # Ícono rosa con símbolo de información
+                icon=folium.Icon(color='beige', icon="info-sign") # Ícono rosa con símbolo de información
             ).add_to(mapa) # Y agregamos el marcador al mapa
     
     # Agregamos un subtítulo (st.subheader) para guiar al usuario sobre qué verá en el mapa
