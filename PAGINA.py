@@ -514,7 +514,7 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
         )
         # Ajustamos detalles de diseño del gráfico
         fig.update_layout(
-            title_font_size=24, # El tamaño del título del gráfico
+            title_font_size=18, # El tamaño del título del gráfico
             xaxis_tickangle=-45  # Inclinamos las etiquetas del eje X para que no se sobrepongan
         )
         # Mostramos el grafico
