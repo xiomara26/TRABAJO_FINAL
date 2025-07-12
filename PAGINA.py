@@ -493,6 +493,7 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
             xaxis_tickangle=-45, # la inclinación de las etiquetas del eje X
             template='plotly_white', # un fondo blanco
             legend_title_text='Versión'  # y el título de la leyenda
+            height=600
         )
 
         # Mostrar el gráfico
