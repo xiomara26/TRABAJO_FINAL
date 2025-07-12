@@ -302,7 +302,7 @@ elif pagina_seleccionada=="♡ Videoclips": # Si en el desplegable la página el
 elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el desplegable la página elegida es "♡ Original vs Taylor's Version" se muestra este contenido:
      
     # Agregamos un título centrado, con una parte en cursiva y otra a color , como las anteriores.
-    st.markdown("<h1 style='text-align: center;'><em>ORIGINAL</em> <span style='color: white;'>vs</span> <span style='color: #d8a7b1;'>TAYLOR'S VERSION</span></h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'><em>ORIGINAL</em> <span style='color: #9A717B;'>vs</span> <span style='color: #d8a7b1;'>TAYLOR'S VERSION</span></h1>", unsafe_allow_html=True)
     # Subtítulo para indicar que se debe seleccionar una era a comparar
     st.subheader("🌷 Elige la era a comparar:")
 
