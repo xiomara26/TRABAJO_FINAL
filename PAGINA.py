@@ -331,8 +331,8 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
     
     # Ahora vamos a preparar los datos que se presentarán en la comparación
     
-    # Para que la comparación sea más visual en la primera parte se presenta el nombre de los albumes a comparar y la imagen de sus portadas    
-    # Recuperamos listas que ya se usaron en la primera pagina
+    # Para que la comparación sea más visual en la primera parte se presenta el nombre de los álbumes a comparar y la imagen de sus portadas    
+    # Recuperamos listas que ya se usaron en la primera página
     # LISTA DE ALBUMES
     lista_albumes= list(df_discografia["Álbum"].unique())
     lista_albumes.remove("single")
@@ -358,7 +358,6 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
                     # Mostramos el nombre de la era en cursiva, alineado a la izquierda, con salto de línea arriba para que este a la altura del otro
                     st.markdown(f""" 
                     <div style='text-align: center;'> 
-                        <br>
                         <h3><em>{era_seleccionada}</em></h3>
                         <img src="{portada}" width="250">
                     </div>
