@@ -487,7 +487,7 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
         # Ajustamos el diseño del gráfico
         fig.update_layout(
             title=(f"🌟 Comparación de reproducciones: {era_seleccionada} vs {era_seleccionada} (Taylor's Version)"), # Le ponemos un titulo
-            title_font_size=20, # editamos el tamaño del titulo
+            title_font_size=18, # editamos el tamaño del titulo
             xaxis_title="Canción", # título del eje X
             yaxis_title="Reproducciones en Spotify", # título del eje Y
             barmode='group', # el modo de visualización: barras agrupadas
