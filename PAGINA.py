@@ -563,12 +563,10 @@ else: # Como última opcion, sino se eligió ninguna de las páginas anteriores,
 
     # Input para el jugador
     if not st.session_state.terminado: # Si el juego aún NO ha terminado...
-        intento = st.text_input("Adivina una letra:", max_chars=1).lower() # Se muestra un input de texto para que el usuario vaya agregando letras, las cuales las pasando a minuscula y así puedan coincidir con la palabra
+        intento = st.text_input("Adivina una letra:", max_chars=1).lower() # Se muestra un input de texto para que el usuario vaya agregando letras, las cuales las pasando a minuscula y así puedan coincidir con la palabra, se limita el número de caracteres en el ingreso a uno.
 
         if intento: # Si se ingresó algo en el input...
-            if len(intento) != 1: # Si la cantidad de letras del intento es diferente de 1...
-                st.warning("🚫 Ingresa solo UNA letra.") # da un mensaje en formato advertencia 
-            elif intento in letras_adivinadas: # Si el intento ya está en las letras adivinadas...
+            if intento in letras_adivinadas: # Si el intento ya está en las letras adivinadas...
                 st.info("🔁 Ya intentaste con esa letra.") # da este mensaje
             else:  # Agrega la letra a letras_adivinadas, sea correcta o no
                 letras_adivinadas.append(intento)
@@ -617,4 +615,3 @@ else: # Como última opcion, sino se eligió ninguna de las páginas anteriores,
             for key in ["palabra_secreta", "letras_adivinadas", "intentos", "terminado"]:
                 del st.session_state[key]# Esto borra todos los datos almacenados en la variables y el juego vuelve a iniciar.
                 #AQUI TERMINA EL CONTENIDO DE LA PAGINA 5
-            
