@@ -355,7 +355,7 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
             portada= fila["Link_portada"] # Obtenemos el link de la portada del álbum
             if era_seleccionada.lower() == album: # Si el nombre del álbum coincide con la era seleccionada (caso versión original)
                 with col1: # La versión original ocupará la columna 1
-                    # Mostramos el nombre de la era en cursiva, alineado a la izquierda, con salto de línea arriba para que este a la altura del otro
+                    # Mostramos el nombre de la era en cursiva, alineado a la izquierda
                     st.markdown(f""" 
                     <div style='text-align: center;'> 
                         <h3><em>{era_seleccionada}</em></h3>
@@ -375,7 +375,7 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
 
 
     # La segunda parte de la comparación presenta los gráficos comparativos de las reproducciones aproximadas en Spotify
-    # Diseñaremos un código que nos permita generar los gráficos según cambie la eleccion del usuario
+    # Diseñaremos un código que nos permita generar los gráficos según cambie la elección del usuario
     if era_seleccionada is not None: # Verificamos que sí se haya elegido una era
         # Creamos una lista vacía para guardar las filas del DataFrame que coincidan con la era seleccionada
         filas_filtradas = []
