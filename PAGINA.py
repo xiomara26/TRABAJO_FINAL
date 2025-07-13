@@ -521,7 +521,7 @@ elif pagina_seleccionada==  "♡ Original vs Taylor's Version": # Si en el despl
         st.plotly_chart(fig, use_container_width=True)
     #AQUI TERMINA EL CONTENIDO DE LA PAGINA 4
 
-else: # Como última opcion, sino se eligió ninguna de las páginas anteriores, la unica restante es "♡ Conoce a Taylor"
+else: # Como última opcion, sino se eligió ninguna de las páginas anteriores, la unica restante es "♡ Sección Lúdica"
     
     st.title("🌟🎤 Bienvenid@ al Juego del Ahorcado (Taylor's Version) 🎤🌟") # Colocamos un título de bienvenida
 
